@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.write(
+        '<script src="http://' +
+          (location.host || "localhost").split(":")[0] +
+          ':35729/livereload.js?snipver=1"></' +
+          "script>"
+      );
+    </script>
+    <title>The Box</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fanwood+Text|Quattrocento|Ubuntu|Montserrat|Roboto"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="body">
+      <div id="content">
+        <div id="nav">
+          <header>
+            <div>Smart Box</div>
+            <div class="nav">
+              <ul>
+                <li>COURSES</li>
+                <li>ABOUT</li>
+              </ul>
+            </div>
+          </header>
+        </div>
+        <div class="main">
+          <img src="images/5.2.jpg" alt="" />
+          <div id="overlay">
+            <div>
+              <h3>IT'S NEVER TO LATE TO STUDY</h3>
+            </div>
+            <div id="search">
+              <input
+                type="text"
+                name="search"
+                placeholder="What do you want to learn today ?"
+              />
+              <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div id="details">
+          <div class="detimg">
+            <div><img src="images/side.jpg" alt="" /></div>
+          </div>
+          <div class="dettext">
+            <div>
+              <h2>Welcome to Smart Education</h2>
+              <P
+                >There are coffee shops, sports, restaurants and a multitude of
+                great study spots. Whether you are a prospective student or
+                already taking classes, feel free to explore and see what makes
+                "the campus on the hill" so special.</P
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <sidebar>
+        <div class="form">
+          <div class="input">
+            <label for="username">
+              <p>USERNAME / EMAIL</p>
+            </label>
+            <input type="text" />
+          </div>
+          <div class="input">
+            <label for="password">
+              <p>PASSWORD</p>
+            </label>
+            <input type="password" />
+          </div>
+          <div class="log">
+            <div>
+              <button id="login">LOGIN</button>
+              <button id="signup">SIGNUP</button>
+            </div>
+          </div>
+          <div class="forgot">
+            <div>
+              <a href="">trouble logging in ?</a>
+            </div>
+          </div>
+          <div class="social goo">
+            <button>
+              <div>
+                <i class="fa fa-google fa-2x" aria-hidden="true"></i>
+              </div>
+              <p>Google login</p>
+            </button>
+          </div>
+          <div class="social fac">
+            <button href="">
+              <div>
+                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+              </div>
+              <p>Facebook login</p>
+            </button>
+          </div>
+        </div>
+      </sidebar>
+    </div>
+    <div class="fill">
+      <div class="fhead">
+        <h2>Fill the Detials so that we can get started</h2>
+      </div>
+      <div class="fbody">
+        <div class="fillin">
+          <div>
+            <h4>Name</h4>
+          </div>
+          <div class="finput">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="fillin">
+          <div>
+            <h4>Branch</h4>
+          </div>
+          <div class="finput">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="fillin">
+          <div>
+            <h4>Length of course</h4>
+          </div>
+          <div class="finput">
+            <select name="Months" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+              <option value="">11</option>
+              <option value="">12</option>
+            </select>
+          </div>
+        </div>
+        <div class="fillin">
+          <div>
+            <h4>Difficulty level</h4>
+          </div>
+          <div class="finput">
+            <select name="Difficulty" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+            </select>
+          </div>
+        </div>
+        <div class="fillin">
+          <div>
+            <h4>Certificate required</h4>
+          </div>
+          <div class="finput">
+            <select name="" id="">
+              <option value="">Yes</option>
+              <option value="">No</option>
+            </select>
+          </div>
+        </div>
+        <div class="fillin">
+          <div>
+            <h4>Year studying in</h4>
+          </div>
+          <div class="finput">
+            <select name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+            </select>
+          </div>
+        </div>
+        <div class="fillin">
+          <div>
+            <h4>Course Required</h4>
+          </div>
+          <div class="finput">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="fillin">
+          <button id="fsubmit">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="dependencies/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+  </body>
+</html>
