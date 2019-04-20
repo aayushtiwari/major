@@ -3781,34 +3781,25 @@ var data = [
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; //The maximum is exclusive and the minimum is inclusive
+  return Math.floor(Math.random() * (max - min)) + min;
+  //The maximum is exclusive and the minimum is inclusive
 }
+var value;
+$(".search button").click(function() {
+  $("#table .rowc").remove();
+  value = $("input[name=sea]").val();
+  data.map(e => {
+    if (e.B.includes(value)) {
+      $("#table").append(`<li class="rowc">
+        <div class="name">
+          <p>${e.B}</p>
+        </div>
+      </li>`);
+    }
+  });
+});
+
 function working() {
   var a = getRandomInt(0, 1257);
   return data[a].B;
 }
-$("#table").append(`<li class="rowc">
-        <div class="name">
-          <p>${working()}</p>
-        </div>
-      </li>`);
-$("#table").append(`<li class="rowc">
-        <div class="name">
-          <p>${working()}</p>
-        </div>
-      </li>`);
-$("#table").append(`<li class="rowc">
-        <div class="name">
-          <p>${working()}</p>
-        </div>
-      </li>`);
-$("#table").append(`<li class="rowc">
-        <div class="name">
-          <p>${working()}</p>
-        </div>
-      </li>`);
-$("#table").append(`<li class="rowc">
-        <div class="name">
-          <p>${working()}</p>
-        </div>
-      </li>`);
