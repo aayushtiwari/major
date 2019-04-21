@@ -3789,5 +3789,31 @@ data.map(e => {
           <p>${e.B}</p>
         </div>
       </li>`);
+  }else {
+    $("#table").append(`<li class="rowc">
+        <div class="name">
+          <p>uva-darden-business-growth-strategy</p>
+        </div>
+      </li>`);
+    $("#table").append(`<li class="rowc">
+        <div class="name">
+          <p>emprender</p>
+        </div>
+      </li>`);
+    $("#table").append(`<li class="rowc">
+        <div class="name">
+          <p>statistical-reasoning-2</p>
+        </div>
+      </li>`);
+    $("#table").append(`<li class="rowc">
+        <div class="name">
+          <p>datasci-capstone</p>
+        </div>
+      </li>`);
+    $("#table").append(`<li class="rowc">
+        <div class="name">
+          <p>istoriya-izobretenii-i-otkritii</p>
+        </div>
+      </li>`);
   }
 });
