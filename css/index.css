@@ -60,7 +60,7 @@ header .nav {
 }
 
 sidebar {
-    display: flex;
+    display: none;
     flex-basis: 20%;
 }
 
