@@ -3781,6 +3781,7 @@ var data = [
 var value;
 $("#table .rowc").remove();
 value = localStorage.search;
+console.log(localStorage.search)
 data.map(e => {
   if (e.B.includes(value)) {
     $("#table").append(`<li class="rowc">
