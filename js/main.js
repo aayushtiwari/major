@@ -3797,7 +3797,7 @@ data.map(e => {
       </li>`);
     $("#table").append(`<li class="rowc">
         <div class="name">
-          <p>emprender</p>
+          <p>financial-markets-intror</p>
         </div>
       </li>`);
     $("#table").append(`<li class="rowc">
@@ -3807,12 +3807,12 @@ data.map(e => {
       </li>`);
     $("#table").append(`<li class="rowc">
         <div class="name">
-          <p>datasci-capstone</p>
+          <p>datascience-capstone</p>
         </div>
       </li>`);
     $("#table").append(`<li class="rowc">
         <div class="name">
-          <p>istoriya-izobretenii-i-otkritii</p>
+          <p>presentations-speaking-so-that-people-listen</p>
         </div>
       </li>`);
   }
