@@ -603,6 +603,7 @@ sidebar .log button:nth-child(2) {
   overflow:hidden;
   }
   .fill{
-    width:80%;
+    width:90%;
+    margin-left:5%;
   }
 }
