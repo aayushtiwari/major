@@ -3781,38 +3781,12 @@ var data = [
 var value;
 $("#table .rowc").remove();
 value = localStorage.search;
-console.log(localStorage.search)
+console.log(localStorage.search.toLowerCase())
 data.map(e => {
   if (e.B.includes(value)) {
     $("#table").append(`<li class="rowc">
         <div class="name">
           <p>${e.B}</p>
-        </div>
-      </li>`);
-  }else {
-    $("#table").append(`<li class="rowc">
-        <div class="name">
-          <p>uva-darden-business-growth-strategy</p>
-        </div>
-      </li>`);
-    $("#table").append(`<li class="rowc">
-        <div class="name">
-          <p>emprender</p>
-        </div>
-      </li>`);
-    $("#table").append(`<li class="rowc">
-        <div class="name">
-          <p>statistical-reasoning-2</p>
-        </div>
-      </li>`);
-    $("#table").append(`<li class="rowc">
-        <div class="name">
-          <p>datasci-capstone</p>
-        </div>
-      </li>`);
-    $("#table").append(`<li class="rowc">
-        <div class="name">
-          <p>istoriya-izobretenii-i-otkritii</p>
         </div>
       </li>`);
   }
