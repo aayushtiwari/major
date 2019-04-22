@@ -3780,7 +3780,7 @@ var data = [
 ];
 var value;
 $("#table .rowc").remove();
-value = localStorage.search;
+value = localStorage.search.toLowerCase();
 console.log(localStorage.search.toLowerCase())
 data.map(e => {
   if (e.B.includes(value)) {
