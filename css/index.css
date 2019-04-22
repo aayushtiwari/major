@@ -602,4 +602,7 @@ sidebar .log button:nth-child(2) {
   #body{
   overflow:hidden;
   }
+  .fill{
+    width:80%;
+  }
 }
