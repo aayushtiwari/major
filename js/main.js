@@ -3778,15 +3778,21 @@ var data = [
     B: "uva-darden-business-growth-strategy"
   }
 ];
+
 var value;
+var search;
 $("#table .rowc").remove();
 value = localStorage.search.toLowerCase();
-console.log(localStorage.search.toLowerCase())
+console.log(localStorage.search.toLowerCase());
 data.map(e => {
   if (e.B.includes(value)) {
+    search = `https://www.coursera.org/courses?query=${
+      e.B
+    }&page=1&configure%5BclickAnalytics%5D=true&indices%5Bprod_all_products_custom_ranking_revenuelast28d%5D%5Bconfigure%5D%5BclickAnalytics%5D=true&indices%5Bprod_all_products_custom_ranking_revenuelast28d%5D%5Bconfigure%5D%5BhitsPerPage%5D=10&indices%5Bprod_all_products_custom_ranking_revenuelast28d%5D%5Bpage%5D=1`;
+
     $("#table").append(`<li class="rowc">
         <div class="name">
-          <p>${e.B}</p>
+          <a href=${search}>${e.B}</a>
         </div>
       </li>`);
   }
