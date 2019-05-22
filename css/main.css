@@ -23,7 +23,8 @@ h1 {
   width: 100%;
   display: flex;
 }
-#table li p {
+#table li p,
+a {
   color: ghostwhite;
   font-size: 1.5em;
   text-align: center;
@@ -40,12 +41,15 @@ h1 {
 .rowc {
   background-color: #3498db;
 }
-p {
+p,
+a {
   margin-bottom: 0px;
   font-weight: bold;
   letter-spacing: 1px;
+  text-decoration: none;
 }
-.rowc p {
+.rowc p,
+a {
   font-family: "Arvo", serif !important;
   font-size: 1.4em !important;
   font-weight: normal !important;
