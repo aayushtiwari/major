@@ -3781,11 +3781,13 @@ var data = [
 
 var value;
 var search;
+var a = 1;
 $("#table .rowc").remove();
 value = localStorage.search.toLowerCase();
 console.log(localStorage.search.toLowerCase());
 data.map(e => {
-  if (e.B.includes(value)) {
+  if (e.B.includes(value) && a < 6) {
+    a++;
     search = `https://www.coursera.org/courses?query=${
       e.B
     }&page=1&configure%5BclickAnalytics%5D=true&indices%5Bprod_all_products_custom_ranking_revenuelast28d%5D%5Bconfigure%5D%5BclickAnalytics%5D=true&indices%5Bprod_all_products_custom_ranking_revenuelast28d%5D%5Bconfigure%5D%5BhitsPerPage%5D=10&indices%5Bprod_all_products_custom_ranking_revenuelast28d%5D%5Bpage%5D=1`;
